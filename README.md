@@ -34,7 +34,7 @@ Hugo **0.110.0** or later (extended version recommended for SCSS processing).
 ### As a Git submodule (recommended)
 
 ```bash
-git submodule add https://github.com/yourusername/hugo-theme-swiss-operator themes/swiss-operator
+git submodule add https://github.com/carlosplanchon/hugo-theme-swiss-operator themes/swiss-operator
 ```
 
 Then set the theme in your `hugo.toml`:
