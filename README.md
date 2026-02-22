@@ -8,6 +8,16 @@ A minimalist Hugo theme inspired by Swiss editorial design, built for technical 
 
 ---
 
+## Why Swiss Operator?
+
+The design prioritizes **legibility**, **typographic rhythm**, **grid consistency**, and **structural alignment** — the same principles that make Swiss editorial design reliable in print. These qualities matter most in contexts where precision is non-negotiable: engineering notes, technical documentation, and working knowledge bases where the content has to carry its own weight.
+
+No gradients, no hero sections, no visual noise. Just a clean reading surface and a layout that stays out of the way.
+
+> "Good design is as little design as possible." - Dieter Rams
+
+---
+
 ## Features
 
 - **Swiss editorial aesthetic** — bold typography, tight grid, deliberate whitespace
@@ -25,19 +35,65 @@ A minimalist Hugo theme inspired by Swiss editorial design, built for technical 
 
 ## Requirements
 
-Hugo **0.110.0** or later (extended version recommended for SCSS processing).
+- Hugo **0.110.0+**
+- Go **1.21+** (only required for Hugo Modules installation)
 
 ---
 
 ## Installation
 
-### As a Git submodule (recommended)
+### Hugo Modules (recommended)
+
+> Requires **Go** installed on your system.
+
+**Existing site:**
+
+Initialize your site as a Hugo module (one-time step):
+
+```bash
+hugo mod init github.com/yourusername/your-site
+```
+
+Add the theme import to your `hugo.toml`:
+
+```toml
+[module]
+  [[module.imports]]
+    path = "github.com/carlosplanchon/hugo-theme-swiss-operator"
+```
+
+> Do **not** add `theme = "swiss-operator"` — the module import is sufficient.
+
+**New site:**
+
+```bash
+hugo new site myblog
+cd myblog
+hugo mod init github.com/yourusername/myblog
+```
+
+Add the module import above to `hugo.toml`, then optionally copy the example site content:
+
+```bash
+cp -r $(go env GOPATH)/pkg/mod/github.com/carlosplanchon/hugo-theme-swiss-operator*/exampleSite/* .
+```
+
+**Updating:**
+
+```bash
+hugo mod get -u github.com/carlosplanchon/hugo-theme-swiss-operator
+hugo mod tidy
+```
+
+---
+
+### As a Git submodule
 
 ```bash
 git submodule add https://github.com/carlosplanchon/hugo-theme-swiss-operator themes/swiss-operator
 ```
 
-Then set the theme in your `hugo.toml`:
+Set the theme in your `hugo.toml`:
 
 ```toml
 theme = 'swiss-operator'
@@ -45,7 +101,7 @@ theme = 'swiss-operator'
 
 ### Manual
 
-Download or clone this repository into your site's `themes/swiss-operator/` directory.
+Download or clone this repository into your site's `themes/swiss-operator/` directory, then set `theme = 'swiss-operator'` in your `hugo.toml`.
 
 ---
 
