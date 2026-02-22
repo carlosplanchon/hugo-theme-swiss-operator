@@ -4,13 +4,13 @@ A minimalist Hugo theme inspired by Swiss editorial design, built for technical 
 
 | Light | Dark |
 |---|---|
-| ![Swiss Operator — light mode](static/images/screenshot-home-light.png) | ![Swiss Operator — dark mode](static/images/screenshot-home-dark.png) |
+| ![Swiss Operator - light mode](static/images/screenshot-home-light.png) | ![Swiss Operator - dark mode](static/images/screenshot-home-dark.png) |
 
 ---
 
 ## Why Swiss Operator?
 
-The design prioritizes **legibility**, **typographic rhythm**, **grid consistency**, and **structural alignment** — the same principles that make Swiss editorial design reliable in print. These qualities matter most in contexts where precision is non-negotiable: engineering notes, technical documentation, and working knowledge bases where the content has to carry its own weight.
+The design prioritizes **legibility**, **typographic rhythm**, **grid consistency**, and **structural alignment** - the same principles that make Swiss editorial design reliable in print. These qualities matter most in contexts where precision is non-negotiable: engineering notes, technical documentation, and working knowledge bases where the content has to carry its own weight.
 
 No gradients, no hero sections, no visual noise. Just a clean reading surface and a layout that stays out of the way.
 
@@ -20,16 +20,16 @@ No gradients, no hero sections, no visual noise. Just a clean reading surface an
 
 ## Features
 
-- **Swiss editorial aesthetic** — bold typography, tight grid, deliberate whitespace
-- **Dark / light mode** — auto-detects system preference; toggle persists via `localStorage`
-- **Responsive layout** — 70/30 two-column grid collapses to a single column on mobile
-- **Category color coding** — assign a hex color to each category; shown as a left border accent on post cards
-- **Customizable accent colors** — override the default Blueprint Blue and Safety Red from `hugo.toml`
-- **Multi-language** — ships with English, Spanish, and French i18n strings
-- **Local or Google Fonts** — load Inter + JetBrains Mono from Google Fonts or self-host them
-- **RSS feed** — enabled for home and section pages out of the box
-- **Remark42 comments** — optional self-hosted comment system with automatic dark/light sync
-- **Favicon support** — SVG, PNG, ICO, and JPEG
+- **Swiss editorial aesthetic** - bold typography, tight grid, deliberate whitespace
+- **Dark / light mode** - auto-detects system preference; toggle persists via `localStorage`
+- **Responsive layout** - 70/30 two-column grid collapses to a single column on mobile
+- **Category color coding** - assign a hex color to each category; shown as a left border accent on post cards
+- **Customizable accent colors** - override the default Blueprint Blue and Safety Red from `hugo.toml`
+- **Multi-language** - ships with English, Spanish, and French i18n strings
+- **Local or Google Fonts** - load Inter + JetBrains Mono from Google Fonts or self-host them
+- **RSS feed** - enabled for home and section pages out of the box
+- **Remark42 comments** - optional self-hosted comment system with automatic dark/light sync
+- **Favicon support** - SVG, PNG, ICO, and JPEG
 
 ---
 
@@ -62,7 +62,7 @@ Add the theme import to your `hugo.toml`:
     path = "github.com/carlosplanchon/hugo-theme-swiss-operator"
 ```
 
-> Do **not** add `theme = "swiss-operator"` — the module import is sufficient.
+> Do **not** add `theme = "swiss-operator"` - the module import is sufficient.
 
 **New site:**
 
@@ -185,9 +185,9 @@ draft: false
 ---
 ```
 
-- `categories` — the first category determines the card's accent color.
-- `image` — displayed as a 4:3 cover image on the post card.
-- `description` — shown as the card subtitle on the home page.
+- `categories` - the first category determines the card's accent color.
+- `image` - displayed as a 4:3 cover image on the post card.
+- `description` - shown as the card subtitle on the home page.
 
 ---
 
