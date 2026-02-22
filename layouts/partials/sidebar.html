@@ -1,0 +1,25 @@
+<div class="sidebar-section">
+  <h3>{{ i18n "categories" }}</h3>
+  <ul>
+    {{ range $term, $list := .Site.Taxonomies.categories }}
+      <li>
+        <a href="{{ $list.Page.RelPermalink }}" style="color:inherit;text-decoration:none;">
+          {{ $list.Page.Title }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+
+<div class="sidebar-section" style="margin-top: 60px;">
+  <h3>{{ i18n "posts_list" }}</h3>
+  <ul>
+    {{ $pages := where .Site.RegularPages "Section" "posts" }}
+    {{ range first 5 ($pages.ByDate.Reverse) }}
+      <li style="margin-bottom: 20px;">
+        <span class="log-list-date"><code>{{ .Date.Format "2006.01.02" }}</code></span>
+        <span class="log-list-action"><a href="{{ .RelPermalink }}" style="color:inherit;text-decoration:none;">{{ .Title }}</a></span>
+      </li>
+    {{ end }}
+  </ul>
+</div>

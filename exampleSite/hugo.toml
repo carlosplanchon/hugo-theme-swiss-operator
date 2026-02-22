@@ -1,0 +1,40 @@
+baseURL = 'https://example.com/'
+languageCode = 'en-us'
+title = 'My Swiss Blog'
+theme = 'swiss-operator'
+
+[outputs]
+home = ['html', 'rss']
+section = ['html', 'rss']
+
+[params]
+description = "A personal blog about your topics"
+postsPerPage = 10
+favicon = "/favicon.svg"
+
+[params.social]
+github = "https://github.com/username"
+linkedin = "https://linkedin.com/in/username"
+x = "https://x.com/username"
+instagram = "https://instagram.com/username"
+facebook = "https://facebook.com/username"
+
+[params.theme]
+accentBlue = "#0055FF"
+accentRed = "#E62B1E"
+showRss = true
+localFonts = false  # Set to true to use locally hosted fonts instead of Google Fonts
+
+[params.categories]
+colors = { Engineering = "#0055FF", Aviation = "#E62B1E", Design = "#000000" }
+
+# Enable comments (Remark42)
+# [params.remark42]
+# url = "https://your-remark42-instance.com"
+# site = "blog"
+
+# Main navigation menu
+[[menu.main]]
+  name   = "About"
+  url    = "/about/"
+  weight = 1

@@ -1,0 +1,10 @@
+{{ define "title" }}404 - {{ i18n "page_not_found" }}{{ end }}
+
+{{ define "main" }}
+<div class="not-found-content">
+  <h1 class="not-found-title">404</h1>
+  <p class="not-found-lead">{{ i18n "page_not_found" }}.</p>
+  <p class="not-found-text">{{ i18n "page_not_found_desc" | default "The page you're looking for doesn't exist, or it may have been moved." }}</p>
+  <a href="{{ "/" | relURL }}" class="not-found-back">{{ i18n "back_to_home" }}</a>
+</div>
+{{ end }}

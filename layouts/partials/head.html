@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ block "title" . }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+
+<meta name="description" content="{{ .Description | default site.Params.description }}">
+
+<script>
+  (function() {
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = stored || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+
+{{ with site.Params.favicon }}
+{{ $favicon := . | relURL }}
+{{ if or (strings.HasSuffix . ".svg") (strings.HasSuffix . ".svgz") }}
+<link rel="icon" type="image/svg+xml" href="{{ $favicon }}">
+{{ else if or (strings.HasSuffix . ".png") (strings.HasSuffix . ".apng") }}
+<link rel="icon" type="image/png" href="{{ $favicon }}">
+{{ else if or (strings.HasSuffix . ".ico") (strings.HasSuffix . ".x-icon") }}
+<link rel="icon" type="image/x-icon" href="{{ $favicon }}">
+{{ else if or (strings.HasSuffix . ".jpg") (strings.HasSuffix . ".jpeg") }}
+<link rel="icon" type="image/jpeg" href="{{ $favicon }}">
+{{ else }}
+<link rel="icon" href="{{ $favicon }}">
+{{ end }}
+{{ end }}
+
+{{ if site.Params.theme.localFonts }}
+{{ $fonts := resources.Get "css/fonts.css" }}
+<link rel="stylesheet" href="{{ $fonts.RelPermalink }}">
+{{ else }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+{{ end }}
+
+{{ $style := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+{{ block "head" . }}{{ end }}

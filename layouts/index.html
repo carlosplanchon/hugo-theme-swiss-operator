@@ -1,0 +1,33 @@
+{{ define "title" }}{{ end }}
+
+{{ define "main" }}
+  <div class="article-grid">
+    {{ $pages := where .Site.RegularPages "Section" "posts" }}
+    {{ $categoryColors := site.Params.categories.colors }}
+    {{ range first 6 ($pages.ByDate.Reverse) }}
+      <article class="article-card">
+        {{ if .Params.image }}
+          <a href="{{ .RelPermalink }}"><img src="{{ .Params.image }}" alt="{{ .Title }}"></a>
+        {{ end }}
+
+        {{ $borderColor := "#0055FF" }}
+        {{ with .Params.categories }}
+          {{ $cat := index . 0 }}
+          {{ with index $categoryColors $cat }}
+            {{ $borderColor = . }}
+          {{ end }}
+        {{ end }}
+
+        <span class="card-date mono-date">{{ .Date.Format "2006.01.02" }}</span>
+        
+        <h3 class="card-title" style="border-left: 4px solid {{ $borderColor }}; padding-left: 12px;">
+          <a href="{{ .RelPermalink }}" style="text-decoration:none;color:inherit;">{{ .Title }}</a>
+        </h3>
+        
+        {{ if .Params.description }}
+          <p class="card-description">{{ .Params.description }}</p>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+{{ end }}

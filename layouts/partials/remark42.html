@@ -1,0 +1,25 @@
+{{ if .Site.Params.remark42 }}
+<section class="comments-section">
+  <div class="comments-header">
+    <h2 class="comments-title">Discussion</h2>
+  </div>
+
+  <div class="comments-shell">
+    <div id="remark42"></div>
+  </div>
+</section>
+
+<script>
+  var remark_config = {
+    host: "{{ .Site.Params.remark42.url }}",
+    site_id: "{{ .Site.Params.remark42.site }}",
+    theme: (function() {
+      var t = document.documentElement.getAttribute('data-theme');
+      if (!t) t = localStorage.getItem('theme');
+      if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+      return t || 'light';
+    })()
+  };
+</script>
+<script>!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);</script>
+{{ end }}

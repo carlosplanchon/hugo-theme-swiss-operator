@@ -1,0 +1,23 @@
+[categories]
+other = "Categorías"
+
+[posts_list]
+other = "Lista de Posts"
+
+[read_more]
+other = "Leer más"
+
+[back_to_home]
+other = "Volver al inicio"
+
+[page_not_found]
+other = "Página no encontrada"
+
+[page_not_found_desc]
+other = "La página que buscas no existe o fue movida."
+
+[all_rights_reserved]
+other = "Todos los derechos reservados"
+
+[min_read]
+other = "min de lectura"

@@ -1,0 +1,23 @@
+[categories]
+other = "Categories"
+
+[posts_list]
+other = "Posts List"
+
+[read_more]
+other = "Read more"
+
+[back_to_home]
+other = "Back to home"
+
+[page_not_found]
+other = "Page not found"
+
+[page_not_found_desc]
+other = "The page you're looking for doesn't exist, or it may have been moved."
+
+[all_rights_reserved]
+other = "All rights reserved"
+
+[min_read]
+other = "min read"

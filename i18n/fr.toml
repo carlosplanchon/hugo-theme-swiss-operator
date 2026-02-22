@@ -1,0 +1,20 @@
+[categories]
+other = "Catégories"
+
+[posts_list]
+other = "Liste des articles"
+
+[read_more]
+other = "Lire la suite"
+
+[back_to_home]
+other = "Retour à l'accueil"
+
+[page_not_found]
+other = "Page non trouvée"
+
+[all_rights_reserved]
+other = "Tous droits réservés"
+
+[min_read]
+other = "min de lecture"

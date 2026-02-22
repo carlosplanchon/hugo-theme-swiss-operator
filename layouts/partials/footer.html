@@ -1,0 +1,14 @@
+<footer class="site-footer">
+  <div class="footer-content">
+{{ with site.Params.social }}
+    <div class="social-links">
+{{ with .github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+{{ with .linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+{{ with .twitter }}<a href="{{ . }}" target="_blank" rel="noopener">X</a>{{ end }}
+{{ with .instagram }}<a href="{{ . }}" target="_blank" rel="noopener">Instagram</a>{{ end }}
+{{ with .facebook }}<a href="{{ . }}" target="_blank" rel="noopener">Facebook</a>{{ end }}
+    </div>
+{{ end }}
+    <p>&copy; {{ now.Year }} {{ site.Title }}. {{ i18n "all_rights_reserved" }}.</p>
+  </div>
+</footer>
