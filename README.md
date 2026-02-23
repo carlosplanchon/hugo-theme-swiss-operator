@@ -42,51 +42,6 @@ No gradients, no hero sections, no visual noise. Just a clean reading surface an
 
 ## Installation
 
-### Hugo Modules (recommended)
-
-> Requires **Go** installed on your system.
-
-**Existing site:**
-
-Initialize your site as a Hugo module (one-time step):
-
-```bash
-hugo mod init github.com/yourusername/your-site
-```
-
-Add the theme import to your `hugo.toml`:
-
-```toml
-[module]
-  [[module.imports]]
-    path = "github.com/carlosplanchon/hugo-theme-swiss-operator"
-```
-
-> Do **not** add `theme = "swiss-operator"` - the module import is sufficient.
-
-**New site:**
-
-```bash
-hugo new site myblog
-cd myblog
-hugo mod init github.com/yourusername/myblog
-```
-
-Add the module import above to `hugo.toml`, then optionally copy the example site content:
-
-```bash
-cp -r $(go env GOPATH)/pkg/mod/github.com/carlosplanchon/hugo-theme-swiss-operator*/exampleSite/* .
-```
-
-**Updating:**
-
-```bash
-hugo mod get -u github.com/carlosplanchon/hugo-theme-swiss-operator
-hugo mod tidy
-```
-
----
-
 ### As a Git submodule
 
 ```bash
