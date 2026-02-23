@@ -4,7 +4,7 @@ A minimalist Hugo theme inspired by Swiss editorial design, built for technical 
 
 | Light | Dark |
 |---|---|
-| ![Swiss Operator - light mode](images/screenshot-home-light.png) | ![Swiss Operator - dark mode](images/screenshot-home-dark.png) |
+| ![Swiss Operator - light mode](images/screenshot.png) | ![Swiss Operator - dark mode](images/screenshot-home-dark.png) |
 
 ---
 
