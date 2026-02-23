@@ -96,6 +96,11 @@ h2, h3, h4, h5, h6 {
   border-radius: 2px;
 }
 
+.content-primary img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Content Cards (Left Side) */
 .article-grid {
   display: grid;
