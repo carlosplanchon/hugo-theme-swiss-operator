@@ -3,7 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/carlosplanchon/hugo-theme-swiss-operator/blob/main/LICENSE"
 description = "A minimalist, typography-focused Hugo theme with Swiss design"
 homepage = "https://github.com/carlosplanchon/hugo-theme-swiss-operator"
-tags = ["swiss-design", "dark-mode", "minimalist", "typography", "clean", "responsive", "blog"]
+demosite = "https://carlosplanchon.com"
+tags = ["blog", "minimal", "clean", "typography", "swiss-design", "dark-mode", "responsive"]
 features = ["responsive", "light/dark", "multi-language", "social-links", "rss", "customizable-colors"]
 min_version = "0.120.0"
 
