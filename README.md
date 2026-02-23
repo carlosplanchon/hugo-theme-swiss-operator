@@ -4,7 +4,7 @@ A minimalist Hugo theme inspired by Swiss editorial design, built for technical 
 
 | Light | Dark |
 |---|---|
-| ![Swiss Operator - light mode](images/screenshot.png) | ![Swiss Operator - dark mode](images/screenshot-home-dark.png) |
+| ![Swiss Operator - light mode](https://raw.githubusercontent.com/carlosplanchon/hugo-theme-swiss-operator/refs/heads/main/images/screenshot.png) | ![Swiss Operator - dark mode](https://raw.githubusercontent.com/carlosplanchon/hugo-theme-swiss-operator/refs/heads/main/images/screenshot-home-dark.png) |
 
 ---
 
