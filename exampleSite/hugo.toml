@@ -38,3 +38,9 @@ colors = { Engineering = "#0055FF", Aviation = "#E62B1E", Design = "#000000" }
   name   = "About"
   url    = "/about/"
   weight = 1
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.120.0"
+
