@@ -4,8 +4,8 @@ licenselink = "https://github.com/carlosplanchon/hugo-theme-swiss-operator/blob/
 description = "A minimalist, typography-focused Hugo theme with Swiss design"
 homepage = "https://github.com/carlosplanchon/hugo-theme-swiss-operator"
 tags = ["swiss-design", "dark-mode", "minimalist", "typography", "clean", "responsive", "blog"]
-features = ["responsive", "multi-language", "social-links", "rss"]
-min_version = "0.110.0"
+features = ["responsive", "light/dark", "multi-language", "social-links", "rss", "customizable-colors"]
+min_version = "0.120.0"
 
 [author]
   name = "Carlos A. Planchón"
