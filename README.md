@@ -86,7 +86,9 @@ baseURL = 'https://example.com/'
 languageCode = 'en-us'
 title = 'My Swiss Blog'
 theme = 'swiss-operator'
-# googleAnalytics = "G-XXXXXXXXXX"
+
+[services.googleAnalytics]
+id = "G-XXXXXXXXXX"
 
 [outputs]
 home    = ['html', 'rss']
