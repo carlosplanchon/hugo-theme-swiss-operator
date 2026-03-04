@@ -28,6 +28,7 @@ No gradients, no hero sections, no visual noise. Just a clean reading surface an
 - **Multi-language** - ships with English, Spanish, and French i18n strings
 - **Local or Google Fonts** - load Inter + JetBrains Mono from Google Fonts or self-host them
 - **RSS feed** - enabled for home and section pages out of the box
+- **Google Analytics** - optional GA4 support via Hugo's built-in integration
 - **Remark42 comments** - optional self-hosted comment system with automatic dark/light sync
 - **Favicon support** - SVG, PNG, ICO, and JPEG
 
@@ -85,6 +86,7 @@ baseURL = 'https://example.com/'
 languageCode = 'en-us'
 title = 'My Swiss Blog'
 theme = 'swiss-operator'
+# googleAnalytics = "G-XXXXXXXXXX"
 
 [outputs]
 home    = ['html', 'rss']

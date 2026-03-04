@@ -41,4 +41,6 @@
 {{ $style := resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
+{{ template "_internal/google_analytics.html" . }}
+
 {{ block "head" . }}{{ end }}
